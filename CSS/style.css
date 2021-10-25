@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+
+hr{
+    height:1px;
+    background-color: aqua;
+}
+ul{
+    list-style-position: inside;
+}
+h2,h1{
+    color: rgb(99, 164, 187);
+    
+}
