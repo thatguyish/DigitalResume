@@ -1,10 +1,12 @@
 body{
     text-align: center;
+    border: 5px,solid,black;
 }
 
 hr{
     height:1px;
-    background-color: aqua;
+    color: aqua;
+    border-top: dotted 10px;
 }
 ul{
     list-style-position: inside;
