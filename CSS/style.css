@@ -1,17 +1,83 @@
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+/* make body fade in */
 body{
     text-align: center;
     border: 5px,solid,black;
+    width: auto;
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+    width: 90vw;
+    margin: auto;
+    background-image: url("https://cdn.staticcrate.com/stock-hd/effects/footagecrate-4k-looping-tech-background-clean-blue-2-prev-full.png");
+    background-size: 100vw 100vh;
+    color: aliceblue;
 }
 
 hr{
     height:1px;
     color: aqua;
+    border: none;
     border-top: dotted 10px;
+    
 }
+/* Make list items move from top to bottom */
 ul{
     list-style-position: inside;
+    
 }
 h2,h1{
     color: rgb(99, 164, 187);
-    
+}
+
+.work-experience,.education{
+    display: none;
+}
+
+#work-experience-btn{
+    display: none;
+}
+
+#work-experience-btn:checked + label > div{
+    display: block;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+}
+
+#education-btn{
+    display: none;
+}
+
+#education-btn:checked + label > div{
+    display: block;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+}
+
+.experience-seperator{
+    color: black;
+    width: 80%;
+    border: none;
+    border-top: solid 2px;
 }
